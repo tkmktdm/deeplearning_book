@@ -63,12 +63,25 @@ arr = np.array([15,30,5])
 
 # 行列計算
 arr = np.arange(9).reshape(3,3)
-print(arr)
-print(np.dot(arr,arr))
+#print(arr)
+#print(np.dot(arr,arr))
 vec = arr.reshape(9)
-print(np.linalg.norm(vec))
+#print(np.linalg.norm(vec))
 
 arr = np.arange(4).reshape(2,2)
-print(arr)
+#print(arr)
 vec = arr.reshape(4)
-print(np.linalg.norm(vec))
+#print(np.linalg.norm(vec))
+
+arr = np.arange(15).reshape(3,5)
+# mean平均値 average平均値 max min argmax要素の最大値 argmin要素の最小値
+
+#print(arr.mean(axis=0))
+#print(arr.sum(axis=1))
+#print(arr.min())
+#print(arr.argmax(0))
+
+x = np.arange(15).reshape(3,5)
+
+y = np.array([np.arange(5)])
+print(x - y)
